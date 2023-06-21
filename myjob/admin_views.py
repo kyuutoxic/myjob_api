@@ -398,8 +398,8 @@ def job_post_chart(request):
         "title2": "Không duyệt",
         "title3": "Đã duyệt",
         "color1": "#F8BD7A",
-        "color2": "#000000",
-        "color3": "#ff3d00"
+        "color2": "#ff3d00",
+        "color3": "#4caf50"
     })
 
 
