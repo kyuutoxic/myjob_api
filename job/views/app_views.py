@@ -118,7 +118,7 @@ class JobPostViewSet(viewsets.ViewSet,
     def get_job_posts_saved(self, request):
         user = request.user
         queryset = user.saved_job_posts.filter(status=var_sys.JOB_POST_STATUS[2][0]) \
-            .order_by('update_at', 'create_at')
+            .order_by('-update_at', '-create_at')
 
         page = self.paginate_queryset(queryset)
 
